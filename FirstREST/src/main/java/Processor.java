@@ -14,8 +14,6 @@ public class Processor implements Runnable {
     }
 
     public void run() {
-
-
         for(int i = 0; i < iterationNum; i++){
             long getStartTime = System.currentTimeMillis();
             Response getResponse = restClient.getStatus();

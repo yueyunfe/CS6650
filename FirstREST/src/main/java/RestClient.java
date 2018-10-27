@@ -15,7 +15,7 @@ public class RestClient {
     private final String serverUrl = "webService";
 
     public RestClient(Client client, String ipAddress, String port){
-        String url = "http://" + ipAddress + ":" + port + "/web";
+        String url = "http://" + ipAddress + ":" + port + "/FirstREST_war/web";
         this.baseTarget = client.target(url);
     }
 
