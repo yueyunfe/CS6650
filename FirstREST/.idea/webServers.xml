@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="913ddb7d-0fcd-4b45-8cf8-4a41fca30357" name="AWS" url="http://34.220.64.13">
+        <fileTransfer host="34.220.64.13" port="22" privateKey="S:\Putty\AWS_Key\awsMedium.pem" rootFolder="/home/ec2-user" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
