@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib" />
+      <root url="jar://$PROJECT_DIR$/lib/jersey-container-servlet-core.jar!/" />
+      <root url="jar://$USER_HOME$/.ideaLibSources/javax.ws.rs-api-2.0-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
