@@ -29,6 +29,14 @@
       <artifactId>appengine-api-1.0-sdk</artifactId>
       <version>1.9.68</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.cloud.bigtable/bigtable-hbase-1.2 -->
+    <dependency>
+      <groupId>com.google.cloud.bigtable</groupId>
+      <artifactId>bigtable-hbase-1.2</artifactId>
+      <version>1.0.0-pre3</version>
+    </dependency>
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>

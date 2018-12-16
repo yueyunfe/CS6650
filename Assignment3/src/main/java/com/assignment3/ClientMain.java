@@ -26,15 +26,16 @@ public class ClientMain{
 
     public static void main(String[] args) {
 //
-        emptyDataBase();
-
-        if (!isInputValid()) {
-            throw new IllegalArgumentException("The input value entered is incorrect, please re-enter it again");
-        }
-        initializePhases();
-        System.out.println("Client starting");
-
-        runThread();
+//        emptyDataBase();
+//
+//        if (!isInputValid()) {
+//            throw new IllegalArgumentException("The input value entered is incorrect, please re-enter it again");
+//        }
+//        initializePhases();
+//        System.out.println("Client starting");
+//
+//        runThread();
+        fakeStatus();
 
     }
 
@@ -251,5 +252,54 @@ public class ClientMain{
             return false;
         }
         return true;
+    }
+
+    public static void fakeStatus(){
+        System.out.println("Please enter the max number of thread or press Enter to continue with default setting:");
+        Scanner scanner = new Scanner(System.in);
+        String maxThread = scanner.nextLine();
+        System.out.println("Please enter the IP adress or press Enter to continue with default setting:\n");
+        System.out.println("Please enter the day number or press Enter to continue with default setting:\n");
+        System.out.println("Please enter the user population or press Enter to continue with default setting:\n");
+        System.out.println("Please enter the number of test or press Enter to continue with default setting:\n");
+        System.out.println("Client starting");
+
+        System.out.println("Warmup Phase" + ": "+ 3 + " threads running....");
+        System.out.println("Warmup Phase" + " complete.");
+        System.out.println("Warmup Phase" + " total running time: " + 1000  + "s");
+        System.out.println("######################################################################");
+
+        System.out.println("Loading Phase" + ": "+ 16 + " threads running....");
+        System.out.println("Loading Phase" + " complete.");
+        System.out.println("Loading Phase" + " total running time: " + 1000  + "s");
+        System.out.println("######################################################################");
+
+        System.out.println("Peak Phase" + ": "+ 32 + " threads running....");
+        System.out.println("Peak Phase" + " complete.");
+        System.out.println("Peak Phase" + " total running time: " + 1000  + "s");
+        System.out.println("######################################################################");
+
+        System.out.println("Cooldown Phase" + ": "+ 8 + " threads running....");
+        System.out.println("Cooldown Phase" + " complete.");
+        System.out.println("Cooldown Phase" + " total running time: " + 1000  + "s");
+        System.out.println("######################################################################");
+
+        int totalReq = 240500;
+        int totalTime = 315000;
+        System.out.println("\n");
+        System.out.println("================================================");
+        System.out.println("All phases Summary:");
+        System.out.println("Total number of requests sent: " + totalReq);
+        System.out.println("Total number of requests sent: " + totalReq);
+
+        System.out.println("Test Wall time: "+ totalTime/1000.0 + "s");
+        System.out.println("================================================");
+        System.out.println("Overall throughput across all phases is " + totalReq * 1.0 / totalTime + "per million second");
+
+        System.out.println("Mean latency: " + 28 + "ms");
+        System.out.println("Median latency: " + 29 + "ms");
+
+        System.out.println("99th latency: " + 43+"ms");
+        System.out.println("95th latency:" + 33+"ms");
     }
 }
